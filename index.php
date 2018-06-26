@@ -1,6 +1,6 @@
 <?php 
 
-//データ取得ロジックを呼び出す
+//①データ取得ロジックを呼び出す
 include_once('model.php');
 
 $userData = getUserData($_GET);
@@ -20,6 +20,7 @@ $userData = getUserData($_GET);
 <h1 class="col-xs-6 col-xs-offset-3">検索フォーム</h1>
 <div class="col-xs-6 col-xs-offset-3 well">
 
+	<?php //②検索フォーム ?>
 	<form method="get">
 		<div class="form-group">
 			<label for="InputName">名前</label>
@@ -47,7 +48,7 @@ $userData = getUserData($_GET);
 
 </div>
 <div class="col-xs-6 col-xs-offset-3">
-
+	<?php //③取得データを表示する
 	<?php if(isset($userData) && count($userData)): ?>
 		<p class="alert alert-success"><?php echo count($userData) ?>件見つかりました。</p>
 		<table class="table">
