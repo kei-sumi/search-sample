@@ -7,7 +7,7 @@ function getUserData($params){
 	//DBコネクタを生成
 	$Mysqli = new mysqli($host, $username, $password, $dbname);
 	if ($Mysqli->connect_error) {
-			error_log($mysqli->connect_error);
+			error_log($Mysqli->connect_error);
 			exit;
 	}
 
