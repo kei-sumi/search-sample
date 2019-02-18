@@ -48,7 +48,7 @@ $userData = getUserData($_GET);
 
 </div>
 <div class="col-xs-6 col-xs-offset-3">
-	<?php //③取得データを表示する
+	<?php //③取得データを表示する ?>
 	<?php if(isset($userData) && count($userData)): ?>
 		<p class="alert alert-success"><?php echo count($userData) ?>件見つかりました。</p>
 		<table class="table">
